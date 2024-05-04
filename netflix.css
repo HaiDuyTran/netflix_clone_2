@@ -11,7 +11,7 @@ body {
 }
 
 .main {
-    background-image: url("./image/netflix.jpg");
+    background-image: url("https://user-images.githubusercontent.com/33485020/108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11.jpg");
     background-position: center center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@ nav button {
     z-index: 10;
 }
 
-.login_box{
+.login_box {
     display: flex;
     gap: 10px;
     z-index: 100;
@@ -59,16 +59,16 @@ nav button {
     background: transparent;
     border: none;
     color: white;
-  }
-  
+}
+
 .language__drop__down:focus {
     outline: none;
 }
-  
+
 .language__drop__down option {
     background-color: black;
 }
-  
+
 .dropdown__container {
     border: 1px solid white;
     padding: 0.4rem;
@@ -204,7 +204,7 @@ section.first>div :nth-child(2) {
 
 }
 
-.faq input{
+.faq input {
     padding: 7px 101px 8px 14px;
     color: white;
     font-size: 12px;
@@ -267,7 +267,7 @@ footer .questions {
 
 @media screen and (max-width: 1300px) {
 
-    nav{
+    nav {
         max-width: 90vw;
     }
 
@@ -313,10 +313,10 @@ footer .questions {
         padding: 75px 0;
     }
 
-    .footer-item{
+    .footer-item {
         align-items: center;
     }
- 
+
 
 }
 
