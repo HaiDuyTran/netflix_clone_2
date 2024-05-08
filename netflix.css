@@ -117,6 +117,10 @@ nav button {
     z-index: 20;
 }
 
+.primary__button {
+    height: 50px;
+}
+
 .btn {
     padding: 3px 8px;
     font-weight: 400;
@@ -204,7 +208,66 @@ section.first>div :nth-child(2) {
 
 }
 
-.faq input {
+.FAQ__accordian {
+    width: 70%;
+}
+
+.FAQ__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    color: white;
+}
+
+.FAQ__visible {
+    color: white;
+    background-color: #303030;
+    border-top: 1px solid black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.FAQ__visible>p {
+    margin: 1rem;
+}
+
+.FAQ__list__container {
+    border-top: 8px solid #222;
+    padding: 2rem 0;
+}
+
+.FAQ__heading {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 3rem;
+}
+
+.FAQ__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.FAQ__get__started__email {
+    text-align: center;
+}
+
+.FAQ__get__started__email>h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+.FAQ__list__container input {
     padding: 7px 101px 8px 14px;
     color: white;
     font-size: 12px;
@@ -213,37 +276,6 @@ section.first>div :nth-child(2) {
     border: 1px solid rgba(246, 238, 238, 0.5);
 }
 
-.faq h2 {
-    text-align: center;
-    font-size: 48px;
-}
-
-.faq {
-    background: black;
-    color: white;
-    padding: 34px;
-}
-
-.faqbox:hover {
-    background-color: #414141;
-    color: white;
-}
-
-.faqbox svg {
-    filter: invert(1);
-}
-
-.faqbox {
-    transition: all 1s ease-out;
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #2d2d2d;
-    padding: 24px;
-    max-width: 60vw;
-    margin: 34px auto;
-    cursor: pointer;
-}
 
 footer {
     color: white;
@@ -303,7 +335,7 @@ footer .questions {
         gap: 16px;
     }
 
-    .faq h2 {
+    .FAQ__list__container h1 {
         text-align: center;
         font-size: 32px;
     }
@@ -341,4 +373,46 @@ footer .questions {
     display: flex;
     flex-direction: column;
     gap: 23px;
+}
+
+
+#popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.close-btn {
+    position: absolute;
+    top: -14px;
+    right: -2px;
+    cursor: pointer;
+    color: red;
+    font-size: 30px;
+}
+
+
+.popup-content img {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+#output {
+    color: black;
+    font-size: medium;
 }
