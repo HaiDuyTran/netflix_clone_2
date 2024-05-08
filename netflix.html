@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="creator" content="Vishal Chaudhary">
     <meta name="description" content="Trang chủ Netflix sử dụng chỉ HTML & CSS">
     <title>Netflix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="netflix.css">
 </head>
+
 <body>
     <div class="main">
 
@@ -15,17 +20,19 @@
             <span><img width="53" src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt=""></span>
             <div class="login_box">
                 <div class="dropdown__container">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="16" color="white" height="16" viewBox="0 0 16 16" role="img" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path></svg>
-                    <select
-                      name="languages"
-                      id="languagesSelect"
-                      class="language__drop__down"
-                    >
-                      <option value="english" selected style="color: white;">English</option>
-                      <option value="vi" style="color: white;">Tiếng Việt</option>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="16" color="white" height="16"
+                        viewBox="0 0 16 16" role="img" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <select name="languages" id="languagesSelect" class="language__drop__down">
+                        <option value="english" selected style="color: white;">English</option>
+                        <option value="vi" style="color: white;">Tiếng Việt</option>
                     </select>
-                  </div>
-                <button class="btn btn-red-sm">Đăng Nhập</button>
+                </div>
+                <button data-img="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
+                    class="popup-btn btn btn-red-sm">Đăng Nhập</button>
             </div>
         </nav>
         <div class="box">
@@ -37,7 +44,8 @@
             <span>Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư cách thành viên của bạn.</span>
             <div class="hero-buttons">
                 <input type="text" placeholder="Địa chỉ Email">
-                <button class="btn btn-red">Bắt Đầu &gt;</button>
+                <button data-img="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
+                    class="popup-btn btn btn-red">Bắt Đầu &gt;</button>
             </div>
         </div>
 
@@ -48,7 +56,8 @@
     <section class="first">
         <div>
             <span>Thưởng thức trên TV của bạn</span>
-            <span>Xem trên TV thông minh, Playstation, Xbox, Chromecast, Apple TV, đầu phát Blu-ray và nhiều thiết bị khác.</span>
+            <span>Xem trên TV thông minh, Playstation, Xbox, Chromecast, Apple TV, đầu phát Blu-ray và nhiều thiết bị
+                khác.</span>
         </div>
 
         <div class="secImg">
@@ -75,7 +84,8 @@
     <section class="first third">
         <div>
             <span>Xem ở mọi nơi</span>
-            <span>Phát trực tuyến không giới hạn phim và chương trình truyền hình trên điện thoại, máy tính bảng, máy tính xách tay và TV.</span>
+            <span>Phát trực tuyến không giới hạn phim và chương trình truyền hình trên điện thoại, máy tính bảng, máy
+                tính xách tay và TV.</span>
         </div>
 
         <div class="secImg">
@@ -96,83 +106,132 @@
         </div>
         <div>
             <span>Tạo hồ sơ cho trẻ em</span>
-            <span>Đưa các em vào những cuộc phiêu lưu với nhân vật được yêu thích trong một không gian riêng. Tính năng này đi kèm miễn phí với tư cách thành viên của bạn.</span>
+            <span>Đưa các em vào những cuộc phiêu lưu với nhân vật được yêu thích trong một không gian riêng. Tính năng
+                này đi kèm miễn phí với tư cách thành viên của bạn.</span>
         </div>
     </section>
 
-    <div class="separation"></div>
 
-    <section class="faq">
-        <h2>Câu hỏi thường gặp</h2>
-        <div class="faqbox">
-            <span>Netflix là gì</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </div>
-        <div class="faqbox">
-            <span>Tôi phải trả bao nhiêu tiền để xem Netflix?</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </div>
-        <div class="faqbox">
-            <span>Tôi có thể xem ở đâu?</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </div>
-        <div class="faqbox">
-            <span>Làm thế nào để hủy?</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </div>
-        <div class="faqbox">
-            <span>Tôi có thể xem gì trên Netflix?</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </div>
-        <div class="faqbox">
-            <span>Netflix có phù hợp cho trẻ em không?</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </div>
-        <div class="hero">
-            <span></span>
-            <span></span>
-            <span>Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư cách thành viên của bạn.</span>
-            <div class="hero-buttons">
-                <input type="text" placeholder="Địa chỉ Email">
-                <button class="btn btn-red">Bắt Đầu &gt;</button>
+
+    <section class="FAQ__list__container">
+        <h1 class="FAQ__heading">Câu hỏi thường gặp</h1>
+        <div class="FAQ__list">
+            <div class="FAQ__accordian">
+                <button class=" FAQ__title">
+                    Netflix là gì?<i class="fa fa-plus"></i>
+                </button>
+                <div class="FAQ__visible">
+                    <p>
+                        Netflix là dịch vụ phát trực tuyến mang đến đa dạng các loại chương trình truyền hình, phim,
+                        anime, phim tài liệu đoạt giải thưởng và nhiều nội dung khác trên hàng nghìn thiết bị có kết nối
+                        Internet.
+                    </p>
+                    <p>
+                        Bạn có thể xem bao nhiêu tùy thích, bất cứ lúc nào bạn muốn mà không gặp phải một quảng cáo nào
+                        – tất cả chỉ với một mức giá thấp hàng tháng. Luôn có những nội dung mới để bạn khám phá và
+                        những chương trình truyền hình, phim mới được bổ sung mỗi tuần!
+                    </p>
+                </div>
+            </div>
+            <div class="FAQ__accordian">
+                <button class=" FAQ__title">
+                    Tôi phải trả bao nhiêu tiền để xem Netflix?<i class="fa fa-plus"></i>
+                </button>
+                <div class="FAQ__visible">
+                    <p>
+                        Xem Netflix trên điện thoại thông minh, máy tính bảng, TV thông minh, máy tính xách tay hoặc
+                        thiết bị phát trực tuyến, chỉ với một khoản phí cố định hàng tháng. Các gói dịch vụ với mức giá
+                        từ 70.000 ₫ đến 260.000 ₫ mỗi tháng. Không phụ phí, không hợp đồng.
+                    </p>
+                </div>
+            </div>
+            <div class="FAQ__accordian">
+                <button class=" FAQ__title">
+                    Tôi có thể xem ở đâu?<i class="fa fa-plus"></i>
+                </button>
+                <div class="FAQ__visible">
+                    <p>
+                        Xem mọi lúc, mọi nơi. Đăng nhập bằng tài khoản Netflix của bạn để xem ngay trên trang web
+                        netflix.com từ máy tính cá nhân, hoặc trên bất kỳ thiết bị nào có kết nối Internet và có cài đặt
+                        ứng dụng Netflix, bao gồm TV thông minh, điện thoại thông minh, máy tính bảng, thiết bị phát đa
+                        phương tiện trực tuyến và máy chơi game.
+                    </p>
+                    <p>
+                        Bạn cũng có thể tải xuống các chương trình yêu thích bằng ứng dụng trên iOS, Android hoặc
+                        Windows 10. Vào phần nội dung đã tải xuống để xem trong khi di chuyển và khi không có kết nối
+                        Internet. Mang Netflix theo bạn đến mọi nơi.
+                    </p>
+                </div>
+            </div>
+            <div class="FAQ__accordian">
+                <button class=" FAQ__title">
+                    Làm thế nào để hủy?<i class="fa fa-plus"></i>
+                </button>
+                <div class="FAQ__visible">
+                    <p>
+                        Netflix rất linh hoạt. Không có hợp đồng phiền toái, không ràng buộc. Bạn có thể dễ dàng hủy tài
+                        khoản trực tuyến chỉ trong hai cú nhấp chuột. Không mất phí hủy – bạn có thể bắt đầu hoặc ngừng
+                        tài khoản bất cứ lúc nào.
+                    </p>
+                </div>
+            </div>
+            <div class="FAQ__accordian">
+                <button class=" FAQ__title">
+                    Tôi có thể xem gì trên Netflix?<i class="fa fa-plus"></i>
+                </button>
+                <div class="FAQ__visible">
+                    <p>
+                        Netflix có một thư viện phong phú gồm các phim truyện, phim tài liệu, chương trình truyền hình,
+                        anime, tác phẩm giành giải thưởng của Netflix và nhiều nội dung khác. Xem không giới hạn bất cứ
+                        lúc nào bạn muốn.
+                    </p>
+                </div>
+            </div>
+            <div class="FAQ__accordian">
+                <button class=" FAQ__title">
+                    Netflix có phù hợp cho trẻ em không?<i class="fa fa-plus"></i>
+                </button>
+                <div class="FAQ__visible">
+                    <p>
+                        Trải nghiệm Netflix Trẻ em có sẵn trong gói dịch vụ của bạn, trao cho phụ huynh quyền kiểm soát
+                        trong khi các em có thể thưởng thức các bộ phim và chương trình phù hợp cho gia đình tại không
+                        gian riêng.
+                    </p>
+                    <p>
+                        Hồ sơ Trẻ em đi kèm tính năng kiểm soát của cha mẹ (được bảo vệ bằng mã PIN), cho phép bạn giới
+                        hạn độ tuổi cho nội dung con mình được phép xem, cũng như chặn những phim hoặc chương trình mà
+                        bạn không muốn các em nhìn thấy.
+                    </p>
+                </div>
             </div>
         </div>
-        
+        <div class="FAQ__get__started__email">
+            <h3>
+                Ready to watch? Enter your email to create or restart your
+                membership.
+            </h3>
+            <div class="hero-buttons">
+                <input type="text" placeholder="Địa chỉ Email">
+                <button data-img="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
+                    class="popup-btn btn btn-red">Bắt Đầu &gt;</button>
+            </div>
+        </div>
     </section>
-    <div class="separation"></div>
-    
+
     <footer>
         <div class="questions">
             Bạn có câu hỏi? Liên hệ với chúng tôi.
         </div>
         <div class="footer">
-            <div class="footer-item"> 
+            <div class="footer-item">
                 <a href="faq">Câu hỏi thường gặp</a>
                 <a href="faq">Quan hệ với nhà đầu tư</a>
                 <a href="faq">Quyền riêng tư</a>
                 <a href="faq">Kiểm tra tốc độ</a>
-               
+
             </div>
 
-            <div class="footer-item"> 
+            <div class="footer-item">
                 <a href="faq">Trung Tâm Trợ Giúp</a>
                 <a href="faq">Việc làm</a>
                 <a href="faq">Tùy chọn cookie</a>
@@ -182,31 +241,41 @@
                 <a href="faq">
                     Tài khoản</a>
                 <a href="faq">Quyền Riêng Tư</a>
-                <a href="faq">Sở Thích Cookie</a> 
+                <a href="faq">Sở Thích Cookie</a>
                 <a href="faq">Doanh Nghiệp</a>
             </div>
 
             <div class="footer-item">
                 <a href="faq">Liên Hệ</a>
-                <a href="faq">Kiểm Tra Tốc Độ</a> 
-                <a href="faq">Thông Báo Pháp Lý</a> 
+                <a href="faq">Kiểm Tra Tốc Độ</a>
+                <a href="faq">Thông Báo Pháp Lý</a>
                 <a href="faq">Chỉ có trên Netflix</a>
             </div>
         </div>
         <br>
         <div class="dropdown__container">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="16" color="white" height="16" viewBox="0 0 16 16" role="img" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path></svg>
-            <select
-              name="languages"
-              id="languagesSelect"
-              class="language__drop__down"
-            >
-              <option value="english" selected style="color: white;">English</option>
-              <option value="vi" style="color: white;">Tiếng Việt</option>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="16" color="white" height="16" viewBox="0 0 16 16"
+                role="img" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z"
+                    fill="currentColor"></path>
+            </svg>
+            <select name="languages" id="languagesSelect" class="language__drop__down">
+                <option value="english" selected style="color: white;">English</option>
+                <option value="vi" style="color: white;">Tiếng Việt</option>
             </select>
-          </div>
-          <br>
+        </div>
+        <br>
         <span>Netflix Việt Nam</span>
     </footer>
+    <div id="popup-container">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <img id="popup-image" src="" alt="Popup Image">
+            <div id="output"></div>
+        </div>
+    </div>
+    <script src="netflix.js"></script>
 </body>
+
 </html>
